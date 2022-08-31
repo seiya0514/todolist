@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+}
+header{
+  height: 50px;
+  width: 1512px;
+  background-color: rgb(128, 234, 234);
+  margin: 0;
+}
+footer{
+  position: absolute;
+  height: 30px;
+  width: 1512px;
+  background-color: rgb(130, 213, 213);
+}
+.list{
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.new-list{
+  font-size: 25px;
+  border-bottom: 1px solid lightgray;
+}
+.form-tag-box{
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 3px;
+}

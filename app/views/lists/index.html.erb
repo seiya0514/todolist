@@ -1,0 +1,16 @@
+<header>
+
+</header>
+
+<div class="list">
+  <p class="new-list">新しいリストを作成</p>
+  <%= form_with(model: @list, local: true) do |form| %>
+    <div class="name">
+      リスト名を入力してください
+      <%= form.text_field :name, class:"form-tag-box"%>
+    </div>
+  <% end %>
+</div>
+
+
+

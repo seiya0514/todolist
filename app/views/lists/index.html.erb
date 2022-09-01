@@ -15,5 +15,12 @@
   <% end %>
 </div>
 
+<div class="list-show">
+----------リスト一覧----------
+  <% @lists.each do |list| %>
+    <div class="show-name"><%= link_to list.name , list %></div>
+  <% end %>
+</div>
+
 
 

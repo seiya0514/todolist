@@ -11,11 +11,27 @@
 
 <div class="task-new">
   <%= form_with(model: [@list, @task], local: true) do |form| %>
-    
+
     <div class="title">
       <div class="form-tag">タイトル  <span class="title-hissu">(必須)</span></div>
       <%= form.text_field :title,  class:"form-tag-box"%>
     </div>
+
+
+    <div class="content">
+      <div class="form-tag">内容</div>
+      <%= form.text_field :content,  class:"content-box"%>
+    </div>
+
+    <div class="time">
+      <div class="form-tag form-tag-time">時間</div>
+      <%= form.datetime_field :start_time, class: 'form-control' %>
+    </div>
+
+    <div class="submit">
+      <%= form.submit class:"submit-box"%>
+    </div>
+
 
   <% end %>
 </div>

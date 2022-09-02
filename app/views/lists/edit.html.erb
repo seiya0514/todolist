@@ -1,9 +1,8 @@
 <header>
-
 </header>
 
 <div class="list">
-  <p class="new-list">新しいリストを作成</p>
+  <p class="new-list">リスト名を変更</p>
   <%= form_with(model: @list, local: true) do |form| %>
     <div class="name">
       リスト名を入力してください
@@ -14,13 +13,3 @@
     </div>
   <% end %>
 </div>
-
-<div class="list-show">
-----------リスト一覧----------
-  <% @lists.each do |list| %>
-    <div class="index-name"><%= link_to list.name , list %></div>
-  <% end %>
-</div>
-
-
-

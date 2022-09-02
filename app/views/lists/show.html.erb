@@ -8,3 +8,14 @@
   <%= link_to '編集', edit_list_path(@list), class: "edit-btn" %>
   <%= link_to '戻る', root_path, class: "back-btn" %>
 </div>
+
+<div class="task-new">
+  <%= form_with(model: [@list, @task], local: true) do |form| %>
+    
+    <div class="title">
+      <div class="form-tag">タイトル  <span class="title-hissu">(必須)</span></div>
+      <%= form.text_field :title,  class:"form-tag-box"%>
+    </div>
+
+  <% end %>
+</div>

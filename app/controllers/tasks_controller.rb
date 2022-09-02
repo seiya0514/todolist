@@ -6,7 +6,6 @@ class TasksController < ApplicationController
     if @task.save
       redirect_to "/lists/#{@task.list.id}"
     else
-      flash.now[:alert] = 'メッセージを入力してください。'
       redirect_to "/lists/#{@task.list.id}"
     end
   end

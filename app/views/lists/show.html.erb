@@ -35,3 +35,13 @@
 
   <% end %>
 </div>
+
+<ul class="task-show">
+  <% @tasks.each do |task| %>
+    <li class="task-list">
+      <%= task.title%>
+      <%= task.content %>
+      <%= task.start_time %>
+    </li>
+  <% end %>
+</ul>

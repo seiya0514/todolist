@@ -10,6 +10,16 @@ class TasksController < ApplicationController
     end
   end
 
+  def destroy
+    @list = List.find(params[:list_id])
+    @task = @list.tasks.find(params[:id])
+    if @task.destroy
+      redirect_to "/lists/#{@task.list.id}"
+    else
+      redirect_to "/lists/#{@task.list.id}"
+    end
+  end
+
   private
 
   def task_parameter

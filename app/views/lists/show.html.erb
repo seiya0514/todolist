@@ -1,15 +1,15 @@
-<header>
-
-</header>
+<%= render "shared/header" %>
 
 <div class="list-content">
-  <h1 class="list-name"><%= @list.name %></h1>
+  <h1 class="list-name">リスト名 『<%= @list.name %>』</h1>
   <%= link_to '削除',list_path(@list.id), class: "destroy-btn", method: :delete, data: { confirm: '本当に?' } %>
   <%= link_to '編集', edit_list_path(@list), class: "edit-btn" %>
   <%= link_to '戻る', root_path, class: "back-btn" %>
 </div>
 
+<h2 class="task-get">タスクを追加</h2>
 <div class="task-new">
+
   <%= form_with(model: [@list, @task], local: true) do |form| %>
 
     <div class="title">
@@ -18,10 +18,7 @@
     </div>
 
 
-    <div class="content">
-      <div class="form-tag">内容</div>
-      <%= form.text_field :content,  class:"content-box"%>
-    </div>
+
 
     <div class="time">
       <div class="form-tag form-tag-time">時間</div>
@@ -36,12 +33,14 @@
   <% end %>
 </div>
 
-<ul class="task-show">
+<ul>
+<div class="task-list">
   <% @tasks.each do |task| %>
-    <li class="task-list">
-      <%= task.title%>
-      <%= task.content %>
-      <%= task.start_time %>
-    </li>
+    <div class="list-border">
+      <li><%= task.title%>
+      <%= task.start_time&.strftime("%Y年%m月%d日%H時%M分") %>
+      <%= link_to '完了',list_task_path(@list, task), class: "destroy-btn2", method: :delete %>
+      </li>
+    </div>
   <% end %>
 </ul>

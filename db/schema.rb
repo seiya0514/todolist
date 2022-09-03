@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(version: 2022_09_31_122545) do
   create_table "tasks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "list_id", null: false
     t.string "title"
-    t.text "content"
     t.datetime "start_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -4,7 +4,7 @@ body{
 header{
   height: 50px;
   width: 1512px;
-  background-color: rgb(128, 234, 234);
+  background-color: rgb(240, 240, 240);
   margin: 0;
 }
 footer{
@@ -34,10 +34,9 @@ footer{
   margin-top: 10px;
 }
 .list-show{
-  width: 1300px;
+  width: 250px;
   height: 500px;
   margin: 0 auto;
-  text-align: center;
 }
 .destroy-btn{
   display: block;
@@ -45,9 +44,6 @@ footer{
   top: 80px;
   left: 1000px;
   font-size: 25px;
-}
-.list-content{
-  text-align: center;
 }
 .back-btn{
   display: block;
@@ -67,4 +63,91 @@ footer{
   display: block;
   font-size: 23px;
   margin-top: 20px;
+}
+.index-name{
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}
+.todolist{
+  text-decoration: none;
+  font-size: 28px;
+  color: rgb(69, 69, 69);
+}
+.header-left{
+  height: 100%;
+  width: 30%;
+  text-align: center;
+}
+.list-name{
+  margin-left: 40px;
+}
+.task-new{
+  margin: 20px 0 0 40px;
+  width: 500px;
+}
+.form-tag-box{
+  width: 450px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 3px;
+}
+.content-box{
+  width: 450px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 3px;
+}
+.task-get{
+  border-bottom: 1px solid lightgray;
+  width: 150px;
+  margin: 0 0 0 40px;
+}
+.form-control{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 3px;
+}
+.submit-box{
+  margin-top: 15px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgb(59, 93, 230);
+  color: #fff;
+  cursor: pointer;
+}
+.title-hissu{
+  background-color: rgb(228, 53, 53);
+  color: #fff;
+  border-radius: 2px;
+}
+.form-tag-box1{
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 3px;
+}
+.list-border{
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  width: 600px;
+  margin: 0 auto;
+}
+.list-border li{
+  margin-top: 15px;
+}
+.start-list{
+  margin-left: 20px;
+}
+.destroy-btn2{
+  text-decoration: none;
+  background-color: rgb(168, 236, 168);
+  color: black;
+  border: 1px rgb(168, 236, 168);
+  padding: 2px;
+  border-radius: 2px;
+}
+.destroy-btn2:hover{
+  background-color: rgb(97, 243, 97);
 }
